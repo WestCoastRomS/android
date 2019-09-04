@@ -1,0 +1,48 @@
+## 1. Grabbing the source ##
+
+[Repo](http://source.android.com/source/developing.html) is a tool provided by Google that
+simplifies using [Git](http://git-scm.com/book) in the context of the Android source.
+
+### 1.1 Installing Repo ###
+
+```bash
+# Make a directory where Repo will be stored and add it to the path
+$ mkdir ~/bin
+$ PATH=~/bin:$PATH
+
+# Download Repo itself
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+# Make Repo executable
+$ chmod a+x ~/bin/repo
+```
+
+### 1.2 Initializing Repo ###
+
+```bash
+# Create a directory for the source files
+# This can be located anywhere (as long as the fs is case-sensitive)
+$ mkdir crDroidMod
+$ cd crDroidMod
+
+# Install Repo in the created directory
+$ repo init -u git://github.com/crDroidMod/android.git -b 9.0
+```
+
+This is what you will run each time you want to pull in upstream changes. Keep in mind that on your
+first run, it is expected to take a while as it will download all the required Android source files
+and their change histories.
+
+```bash
+# Let Repo take care of all the hard work
+$ repo sync --current-branch --force-broken --force-sync --jobs 16 --no-clone-bundle --no-tags --optimized-fetch --prune
+```
+
+```bash
+# Go to the root of the source tree...
+$ cd crDroidMod
+# ...and run to prepare our devices list
+$ . build/envsetup.sh
+# ... now run
+$ brunch "your device name"
+```
