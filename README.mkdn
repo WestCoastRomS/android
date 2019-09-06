@@ -36,6 +36,9 @@ and their change histories.
 ```bash
 # Let Repo take care of all the hard work
 $ repo sync --current-branch --force-broken --force-sync --jobs 16 --no-clone-bundle --no-tags --optimized-fetch --prune
+
+# Let Repo take care of all the hard work (new repo version)
+$ repo sync --current-branch --force-sync --jobs 16 --no-clone-bundle --no-tags --optimized-fetch --prune
 ```
 
 ```bash
