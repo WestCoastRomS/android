@@ -12,7 +12,7 @@
            fetch="https://gitlab.com" />
            
   <remote  name="WestCoastRomS"
-           fetch="https://gitlab.com/WestCoastRomS/wcroms-dev/"
+           fetch=".."
            revision="refs/tags/android-9.0.0_r47" />
 
   
