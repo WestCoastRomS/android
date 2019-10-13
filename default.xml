@@ -26,7 +26,6 @@
     <linkfile src="target" dest="build/target"   remote="aosp" >
     <linkfile src="tools" dest="build/tools"   remote="aosp" >
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed"   remote="aosp" >
-  </project>
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed"   remote="aosp" >
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp"   remote="aosp" >
