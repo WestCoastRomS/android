@@ -11,10 +11,6 @@
   <remote  name="gitlab"
            fetch="ssh://git@gitlab.com" />
 
-  <remote  name="github"
-           fetch=".."
-           review="review.lineageos.org" />
-
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
