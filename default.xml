@@ -22,7 +22,7 @@
            revision="refs/tags/android-9.0.0_r47" />
 
   <remote  name="westcoastroms"
-           fetch="https://gitlab.com/WestCoastRomS/"
+           fetch="https://gitlab.com/WestCoastRomS/wcroms-dev/"
            review="refs/tags/android-9.0.0_r47" />
 
   <default revision="refs/heads/lineage-16.0"
