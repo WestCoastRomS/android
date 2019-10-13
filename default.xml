@@ -15,6 +15,7 @@
            fetch="https://gitlab.com/WestCoastRomS/wcroms-dev"
            revision="refs/tags/android-9.0.0_r47" />
 
+  <!--AOSP REPOS -->
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
