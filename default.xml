@@ -29,7 +29,7 @@
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed"   remote="aosp" >
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
-    <linkfile src="root.bp" dest="Android.bp"remote="aosp" >
+    <linkfile src="root.bp" dest="Android.bp"  remote="aosp" >
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="art" name="platform/art" groups="pdk"   remote="aosp" >
